@@ -28,7 +28,7 @@ d3.csv("https://github.com/MPlusConservation/EMS_Data/blob/main/Gal2.csv",
 
   // When reading the csv, I must format variables:
   function(d){
-    return { date : d3.timeParse("%m/%d/%y  %I:%M")(d.date), value : d.value }
+    return { date : d3.timeParse("%m/%d/%y %I:%M:%s %p")(d.date), value : d.value }
   },
 
   // Now I can use this dataset:
