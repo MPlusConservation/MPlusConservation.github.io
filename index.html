@@ -22,9 +22,11 @@ var svg = d3.select("#my_dataviz")
   .append("g")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
-
+//https://github.com/MPlusConservation/EMS_Data/blob/main/Gal2c.csv
+    
+//https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/3_TwoNumOrdered_comma.csv
 //Read the data
-d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/3_TwoNumOrdered_comma.csv",
+d3.csv("https://github.com/MPlusConservation/EMS_Data/blob/main/Gal2c.csv",
 
   // When reading the csv, I must format variables:
   function(d){
